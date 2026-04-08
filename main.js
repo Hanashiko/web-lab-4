@@ -72,12 +72,12 @@ function createAdvancedCounter() {
   return function createAdvancedCounterWithTwoMethods(objectOfAdvancedCounter) {
     objectOfAdvancedCounter.increment = function () {
       counter++;
-      console.log(`Збільшення на один: ${counter}`);
+      console.log(`Incremented by one: ${counter}`);
     };
 
     objectOfAdvancedCounter.decrement = function () {
       counter--;
-      console.log(`Зменшення на один: ${counter}`);
+      console.log(`Decremented by one: ${counter}`);
     };
   };
 }
